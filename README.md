@@ -2,18 +2,18 @@
 This project demonstrates preprocessing, alignment, quantification, and differential expression analysis from Cancer and Normal RNA-Seq data.
 
 ## Repository Structure
-RNA-Seq-Pipeline/
-│── Input_fastq/              # Raw FASTQ files
-│── Reference_data/           # Reference genome (.fa) and annotation (.gtf)
-│── FastQC_Results/           # QC reports
-│── Preprocessed_files/       # Trimmed FASTQ files
-│── GenomeIndex/              # Genome index for alignment
-│── Aligned_Results/          # BAM/SAM alignment results
-│── Results/Counts/           # featureCounts output
-│── rnaseq_pipeline.sh        # Main Bash pipeline script
-│── rnaseq_deseq.R            # R script for DESeq2 analysis
-│── README.md                 # Documentation
-│── LICENSE                   # License file
+RNA-Seq-Differential-Expression-Pipeline/
+│── RNA-Seq                   # Bash pipeline (QC → Trimming → Alignment → Counting)
+│── Results/                  # Analysis outputs
+│   ├── FINAL FILE.xlsx       # Differential expression results
+│   ├── featurecounts.txt     # Raw featureCounts output
+│   ├── featurecounts_mod.txt # Processed counts file
+│   ├── Heatmap.png           # Sample distance heatmap
+│   ├── PCA Plot.png          # Principal Component Analysis
+│   ├── MA Plot.png           # MA plot of DE genes
+│   ├── Volcano Plot.png      # Volcano plot of DE genes
+│── README.md                 # Project documentation
+│── LICENSE                   # License file (if included)
 │── .gitignore                # Ignore unnecessary files
 
 ## Features
