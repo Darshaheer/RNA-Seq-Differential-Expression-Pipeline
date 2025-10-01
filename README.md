@@ -3,7 +3,8 @@ This project demonstrates preprocessing, alignment, quantification, and differen
 
 ## Repository Structure
 RNA-Seq-Differential-Expression-Pipeline/
-│── RNA-Seq                   # Bash pipeline (QC → Trimming → Alignment → Counting)
+│── RNA-Seq.sh                # Bash pipeline (QC → Trimming → Alignment → Counting)
+│── DESeq-Analysis.R          # R pipeline (Differential Expression + Plotting)
 │── Results/                  # Analysis outputs
 │   ├── FINAL FILE.xlsx       # Differential expression results
 │   ├── featurecounts.txt     # Raw featureCounts output
